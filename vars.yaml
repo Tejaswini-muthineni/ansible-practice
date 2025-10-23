@@ -6,8 +6,8 @@
     Duration: 10hrs
   tasks:
   - name: printing variables
-  vars:
-    COURSE: Java
-  ansible.builtin.debug:
+    vars:
+      COURSE: Java
+    ansible.builtin.debug:
     msg: "welcome to {{ COURSE }} course with {{ Duration }}"
 
