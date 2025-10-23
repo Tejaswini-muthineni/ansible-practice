@@ -9,5 +9,5 @@
     vars:
       COURSE: Java
     ansible.builtin.debug:
-    msg: "welcome to {{ COURSE }} course with {{ Duration }}"
+      msg: "welcome to {{ COURSE }} course with {{ Duration }}"
 
