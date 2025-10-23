@@ -1,0 +1,12 @@
+- name: conditions
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: number
+    prompt: please enter number
+    private: false
+  tasks:
+  - name: checking number is even or not
+    ansible.builtin.debug:
+      msg: given number  {{ number }} is even
+    when: number %2 == 0
